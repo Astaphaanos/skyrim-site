@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*font-family: "Cinzel", serif;*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url(image/player.jpg);
+    background-repeat: no-repeat;
+    background-position: right left;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #0b05058b;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 0;
+}
+
+header li {
+    display: inline;
+    list-style-type: none;
+    align-items: center;
+    margin: 70px;
+}
+
+header li a {
+    font-family: "Cinzel", serif;
+    color: rgba(255, 255, 255, 0.629);
+    text-decoration: none;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+#skyrim-logo {
+    width: 22px;
+    align-items: center;
+}
+
+.box-principal{ /*o texto ficar no meio e para esquerda*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 16px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 600px;
+}
+
+section h1 {
+    font-family: "Cinzel", serif;
+    font-size: bold;
+    text-align: left;
+    font-size: 50px;
+}
+
+section p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #0b05058b;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+
+
