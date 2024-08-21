@@ -1,0 +1,76 @@
+@use 'public/styles/header.scss';
+@use 'public/styles/reset.scss';
+@use './public/styles/introducao.scss';
+@use './public/styles/history.scss';
+@use './public/styles/slide-racas.scss';
+@use './public/styles/dragon-language.scss';
+@use './public/styles/expansoes.scss';
+
+
+@import './public/styles/variaveis.scss';
+
+body,html {
+    color: #fff;
+    background-color: $corPrincipal;
+    font-family: $fontCorpo;
+    position: relative;
+    height: 100%;
+}
+
+footer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+
+    .links-footer {
+        margin: 40px;
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            li {
+                list-style: none;
+                margin-right: 60px;
+
+                a {
+                    text-decoration: none;
+                    color: #A6916A;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    
+    .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        cursor: pointer;
+        
+        img {
+            margin-right: 70px;
+        }
+    }
+
+    p {
+        margin: 80px 0 5px 30px;
+        color: $textGolden;
+        
+        a {
+            text-decoration: none;
+            color: $textGolden;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

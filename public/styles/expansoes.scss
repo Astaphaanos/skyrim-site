@@ -1,0 +1,98 @@
+@import './variaveis.scss';
+
+.expansoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .expansoes-img {
+        img{
+            width: 500px;
+            margin-left: 60px;
+        }
+    }
+
+    .info-expansoes {
+        display: block;
+        width: 50%;
+        margin-right: 100px;
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 19px;
+        }
+
+        .steam-btn {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: $corBtnSteam;
+                font-size: 15px;
+                font-weight: bold;
+
+                padding: 8px;
+                border: none;
+                border-radius: 10px;
+                transition: 1s;
+
+                &:hover {
+                    background-color:#306da7;
+                    transition: 0.5s;
+                }
+                
+                a {
+                    color: $textColor;
+                    text-decoration: none;
+                    text-align: center;
+
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .nuuvem-btn {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: $corBtnNuvem;
+                font-size: 15px;
+                font-weight: bold;
+
+                padding: 8px;
+                border: none;
+                border-radius: 10px;
+                transition: 1s;
+
+                &:hover {
+                    background-color:  #29bdee;
+                    transition: 0.5s;
+                }
+                
+                a {
+                    color: $textColor;
+                    text-decoration: none;
+                    text-align: center;
+
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

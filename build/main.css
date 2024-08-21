@@ -1,0 +1,328 @@
+header {
+  height: 12vh;
+  background-color: black;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav img {
+  margin: 20px 0;
+  margin-left: 70px;
+  width: 60px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  list-style-type: none;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+header nav ul li a {
+  margin-right: 80px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-family: "MedievalSharp", cursive;
+  font-size: 14px;
+  font-weight: lighter;
+  font-weight: bold;
+}
+header nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 0.5px;
+  background-color: #A6916A;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#introducao {
+  background-image: url("/public/image/skyrim-background.jpg");
+}
+#introducao .conteudo-introducao {
+  width: 50%;
+  height: 100vh;
+  transform: translate(10%, 40%);
+}
+#introducao .conteudo-introducao h1 {
+  font-family: "MedievalSharp", cursive;
+  font-size: 40px;
+}
+#introducao .conteudo-introducao p {
+  width: 60%;
+  text-align: justify;
+  margin: 20px 0;
+}
+#introducao .conteudo-introducao .button_slide {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  display: inline-block;
+  background: none;
+  padding: 15px 18px;
+  border: 2px solid #A6916A;
+  box-shadow: inset 0 0 0 0 #A6916A;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  cursor: pointer;
+}
+#introducao .conteudo-introducao .button_slide:hover {
+  box-shadow: inset 0 100px 0 0 #A6916A;
+}
+#introducao .conteudo-introducao .button_slide a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#trailer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+#trailer .trailer-video {
+  margin: 0 40px;
+}
+#trailer .trailer-conteudo {
+  width: 50%;
+  margin-right: 30px;
+}
+#trailer .trailer-conteudo h1 {
+  font-family: "MedievalSharp", cursive;
+  font-size: 30px;
+}
+#trailer .trailer-conteudo p {
+  width: 80%;
+  text-align: justify;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  background: #080808;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide .raca-info {
+  padding: 40px;
+  max-width: 600px;
+}
+.swiper-slide .raca-info img {
+  width: 400px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.swiper-slide .raca-info h3 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.swiper-slide .raca-info p {
+  text-align: justify;
+}
+.swiper-slide .raca-info button {
+  background-color: #A6916A;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.swiper-slide .raca-info button:focus {
+  outline: none;
+}
+.swiper-slide .raca-info button:hover {
+  transition: 0.5s;
+  background-color: #bda466;
+}
+.swiper-slide .raca-info button:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+.swiper-slide .raca-info button:nth-child(2):hover {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+#dragon-language {
+  width: 100%;
+  height: 55vh;
+  text-align: center;
+  margin-top: 50px;
+}
+#dragon-language img {
+  width: 1000px;
+  height: 400px;
+}
+
+.expansoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.expansoes .expansoes-img img {
+  width: 500px;
+  margin-left: 60px;
+}
+.expansoes .info-expansoes {
+  display: block;
+  width: 50%;
+  margin-right: 100px;
+}
+.expansoes .info-expansoes h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.expansoes .info-expansoes p {
+  text-align: justify;
+  font-size: 19px;
+}
+.expansoes .info-expansoes .steam-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.expansoes .info-expansoes .steam-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #16538C;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s;
+}
+.expansoes .info-expansoes .steam-btn button:hover {
+  background-color: #306da7;
+  transition: 0.5s;
+}
+.expansoes .info-expansoes .steam-btn button a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 5px;
+}
+.expansoes .info-expansoes .nuuvem-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.expansoes .info-expansoes .nuuvem-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0099CC;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s;
+}
+.expansoes .info-expansoes .nuuvem-btn button:hover {
+  background-color: #29bdee;
+  transition: 0.5s;
+}
+.expansoes .info-expansoes .nuuvem-btn button a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 5px;
+}
+
+body, html {
+  color: #fff;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+footer {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+}
+footer .links-footer {
+  margin: 40px;
+}
+footer .links-footer ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .links-footer ul li {
+  list-style: none;
+  margin-right: 60px;
+}
+footer .links-footer ul li a {
+  text-decoration: none;
+  color: #A6916A;
+}
+footer .links-footer ul li a:hover {
+  text-decoration: underline;
+}
+footer .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  cursor: pointer;
+}
+footer .logos img {
+  margin-right: 70px;
+}
+footer p {
+  margin: 80px 0 5px 30px;
+  color: #A6916A;
+}
+footer p a {
+  text-decoration: none;
+  color: #A6916A;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,80 @@
+
+@import 'variaveis.scss';
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    background: $corSecundaria;
+
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .raca-info {
+        padding: 40px;
+        max-width: 600px;
+
+        img {
+            width: 400px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        button {
+            background-color: $corBtnOrange;
+            color: $textColor;
+            font-size: 17px;
+            font-weight: bolder;
+            text-transform: uppercase;
+
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+
+            transition: 1s;
+            
+
+            &:focus {
+                outline: none; 
+            }
+
+            &:hover{
+                transition: 0.5s;
+                background-color: #bda466;
+            }
+
+            &:nth-child(2) {
+                transition: 0.5s;
+                margin-right: 0px;
+
+                &:hover {
+                    transition: 0.5s;
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+}
+
+.swiper-button-next , 
+.swiper-button-prev {
+    color: $whiteColor;
+}

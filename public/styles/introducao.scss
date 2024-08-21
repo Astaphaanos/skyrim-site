@@ -1,0 +1,54 @@
+
+@import 'variaveis.scss'; 
+
+#introducao {
+    background-image: url('/public/image/skyrim-background.jpg');
+
+    .conteudo-introducao {
+        width: 50%;
+        height: 100vh;
+        transform: translate(10%, 40%);
+
+        h1 {
+            font-family: $fontTitulo;
+            font-size: 40px;
+        }
+
+        p {
+            width: 60%;
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        .button_slide {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: $textColor;
+
+            display: inline-block;
+            background: none;
+            padding: 15px 18px;
+            border: 2px solid $corBtnOrange;
+
+            box-shadow: inset 0 0 0 0 $corBtnOrange;
+            -webkit-transition: ease-out 0.4s;
+            -moz-transition: ease-out 0.4s;
+            transition: ease-out 0.4s;
+            
+            cursor: pointer;
+            &:hover {
+                box-shadow: inset 0 100px 0 0 $corBtnOrange;
+            }
+
+            a {
+                text-decoration: none;
+                color: $textColor;
+            }
+        }
+
+    }
+
+}
+
+
